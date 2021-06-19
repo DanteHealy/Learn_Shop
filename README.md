@@ -110,29 +110,18 @@ Colour scheme
 
 The 'Register' page contains a card where a new user can enter their user name and password credentials. 
 
-![register](https://github.com/DanteHealy/reader-to-leader/blob/master/static/readme/images/22-register-card.GIF)
-
-
-Just above the register button there are terms and conditions which trigger a popup modal with the terms and conditions. 
-
-![Terms and Conditions](https://github.com/DanteHealy/reader-to-leader/blob/master/static/readme/images/23-register-t%26c-modal.gif)
-
-
-The Terms and Conditions also allows for mobile users. 
-
-![T&C mobile](https://github.com/DanteHealy/reader-to-leader/blob/master/static/readme/images/28-register-t%26c-modal-mobile.gif)
 
 
 ### 2.8 User's profile Page
 
 The profile page has the user's published reviews. 
 
-![profile page](https://github.com/DanteHealy/reader-to-leader/blob/master/static/readme/images/26-profile-page.gif)
+
 
 
 Where no reviews are submitted the user's profile will have a blank card showing that there are no reviews and a button taking the user to the add review page. 
 
-![profile no review card](https://github.com/DanteHealy/reader-to-leader/blob/master/static/readme/images/29-profile-no-review.gif)
+
 
 
 ### 2.9 Defensive programming
