@@ -1,0 +1,45 @@
+[
+    {
+          "pk":1,
+          "model":"products.product",
+          "fields":{
+             "sku":"pp0000000001",
+             "name":"Coding for Finance",
+             "description":"Learn to build advance data models, automated queries and complex automations across a number of valuable finance use cases.",
+             "price":59.99,
+             "category":2,
+             "rating":4.5,
+             "image_url":"",
+             "image":"01coding-finance.jpg"
+          }
+       },
+       {
+          "pk":2,
+          "model":"products.product",
+          "fields":{
+             "sku":" pp0000000002",
+             "name":"Robotic Process Automation",
+             "description":"Learn to free your time from the mundane repetitive work tasks using a range of tools to automate the boring stuff freeing you and your team’s time to focus on the creative value-added work.",
+             "price":39.99,
+             "category":6,
+             "rating":5.0,
+             "image_url":"",
+             "image":"02rpa.jpg"
+          }
+       },
+    {
+          "pk":3,
+          "model":"products.product",
+          "fields":{
+             "sku":" pp0000000003",
+             "name":"Windows 11",
+             "description":"Discover all the latest features and functions with the latest version of the world’s most popular operating system.",
+             "price":19.99,
+             "category":6,
+             "rating":4.5,
+             "image_url":"",
+             "image":"03windows11.jpg"
+          }
+       }
+    ]
+    
