@@ -9,7 +9,7 @@
              "price":59.99,
              "category":2,
              "rating":4.5,
-             "image_url":"",
+             "image_url":"url('/media/01coding-finance.jpg')",
              "image":"01coding-finance.jpg"
           }
        },
@@ -23,7 +23,7 @@
              "price":39.99,
              "category":6,
              "rating":5.0,
-             "image_url":"",
+             "image_url":"url('/media/02rpa.jpg')",
              "image":"02rpa.jpg"
           }
        },
@@ -37,7 +37,7 @@
              "price":19.99,
              "category":6,
              "rating":4.5,
-             "image_url":"",
+             "image_url":"url('/media/03windows11.jpg')",
              "image":"03windows11.jpg"
           }
        }
