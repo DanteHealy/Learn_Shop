@@ -40,48 +40,6 @@
             "image_url":"url('/media/03windows11.jpg')",
             "image":"03windows11.jpg"
          }
-      },
-   {
-      "pk":4,
-      "model":"products.product",
-      "fields":{
-            "sku":" pp0000000004",
-            "name":"Generic Course 1",
-            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            "price":29.99,
-            "category":1,
-            "rating":4.2,
-            "image_url":"url('/media/00background-image.jpg')",
-            "image":"00background-image.jpg"
-         }
-      },
-      {
-         "pk":5,
-         "model":"products.product",
-         "fields":{
-               "sku":" pp0000000005",
-               "name":"Generic Course 1",
-               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-               "price":37.99,
-               "category":2,
-               "rating":3.9,
-               "image_url":"url('/media/00background-image.jpg')",
-               "image":"00background-image.jpg"
-            }
-         },
-         {
-            "pk":6,
-            "model":"products.product",
-            "fields":{
-                  "sku":" pp0000000006",
-                  "name":"Generic Course 3",
-                  "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                  "price":89.99,
-                  "category":7,
-                  "rating":4.9,
-                  "image_url":"url('/media/00background-image.jpg')",
-                  "image":"00background-image.jpg"
-               }
-            }
+      }   
       ]
     
