@@ -17,10 +17,10 @@
                 Business Courses
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Marketing &amp; Sales</a>
-                <a href="" class="dropdown-item">Finance</a>
-                <a href="" class="dropdown-item">Innovation</a>
-                <a href="" class="dropdown-item">Soft Skills</a>
+                <a href="{% url 'products' %}?category=Marketing & sales" class="dropdown-item">Marketing &amp; Sales</a>
+                <a href="{% url 'products' %}?category=Finance" class="dropdown-item">Finance</a>
+                <a href="{% url 'products' %}?category=Innovation" class="dropdown-item">Innovation</a>
+                <a href="{% url 'products' %}?category=Soft skills" class="dropdown-item">Soft Skills</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Digital Courses
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Coding</a>
-                <a href="" class="dropdown-item">Data</a>
-                <a href="" class="dropdown-item">System Deployment</a>
+                <a href="{% url 'products' %}?category=Coding" class="dropdown-item">Coding</a>
+                <a href="{% url 'products' %}?category=Coding" class="dropdown-item">Data</a>
+                <a href="{% url 'products' %}?category=System Deployment" class="dropdown-item">System Deployment</a>
             </div>
         </li>
 
@@ -40,10 +40,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=Finance" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=Special Offers" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=Special Offers" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=Special Offers" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
