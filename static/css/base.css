@@ -203,6 +203,8 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+/* Need to link the follwoing two sections to the submit buttons in the allauth pages */
+
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
 	/* btn */
