@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 
 # Apply ngrok external hosting whilst using VS Code to build project (remove after deployment)! 
-ALLOWED_HOSTS = ['127.0.0.1','958457fb0ad6.ngrok.io',]
+ALLOWED_HOSTS = ['127.0.0.1','9320e9c0ec6e.ngrok.io',]
 
 
 # Application definition
