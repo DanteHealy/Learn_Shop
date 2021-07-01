@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 
 # Apply ngrok external hosting whilst using VS Code to build project (remove after deployment)! 
-ALLOWED_HOSTS = ['dante-learn-shop.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['dante-learn-shop.herokuapp.com','127.0.0.1']
 
 
 # Application definition
