@@ -11,12 +11,18 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
+import os.path
 import environ
 import dj_database_url
+
 from pathlib import Path
 
+
+import mimetypes
+mimetypes.add_type("text/css", ".css", True)
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Initialise environment variables
 env = environ.Env()
@@ -29,8 +35,10 @@ environ.Env.read_env()
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY')
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# If DEVELOPMENT not in env then DEBUG set to False
+
 DEBUG = True
+
 
 # Apply ngrok external hosting whilst using VS Code to build project (remove after deployment)! 
 ALLOWED_HOSTS = ['dante-learn-shop.herokuapp.com','127.0.0.1']
