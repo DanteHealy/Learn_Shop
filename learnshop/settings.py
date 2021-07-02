@@ -35,9 +35,8 @@ environ.Env.read_env()
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY')
 
-# If DEVELOPMENT not in env then DEBUG set to False
-
-DEBUG = True
+# If DEVELOPMENT in env then DEBUG set to True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 
 # Apply ngrok external hosting whilst using VS Code to build project (remove after deployment)! 
