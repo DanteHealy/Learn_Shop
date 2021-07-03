@@ -36,8 +36,10 @@ environ.Env.read_env()
 SECRET_KEY = env('SECRET_KEY')
 
 # If DEVELOPMENT in env then DEBUG set to True
-DEBUG = 'DEVELOPMENT' in os.environ
-# DEBUG = True # For the bug in VS Code local server - comment out before committing and remove before submission
+if 'DEVELOPMENT' in env:
+    DEBUG = True
+else:
+    DEBUG = False
 
 
 # Apply ngrok external hosting whilst using VS Code to build project (remove after deployment)! 
@@ -226,7 +228,7 @@ STRIPE_WH_SECRET = env('STRIPE_WH_SECRET')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+    DEFAULT_FROM_EMAIL = 'learnshopms4@gmail.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
