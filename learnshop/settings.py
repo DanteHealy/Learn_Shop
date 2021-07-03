@@ -37,7 +37,7 @@ SECRET_KEY = env('SECRET_KEY')
 
 # If DEVELOPMENT in env then DEBUG set to True
 DEBUG = 'DEVELOPMENT' in os.environ
-# DEBUG = True # For the bug in VS Code environment - comment out before committing and remove before submission
+# DEBUG = True # For the bug in VS Code local server - comment out before committing and remove before submission
 
 
 # Apply ngrok external hosting whilst using VS Code to build project (remove after deployment)! 
