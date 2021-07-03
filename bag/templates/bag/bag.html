@@ -24,9 +24,9 @@
         <div class="row">
             <div class="col">
                 {% if bag_items %}
-                    <div class="d-block d-md-none">
+                    <div class="d-block d-md-none text-center">
                         <div class="row">
-                            <div class="col">
+                            <div class="col ">
                                 {% include "bag/bag-total.html" %}
                             </div>
                         </div>
@@ -43,13 +43,8 @@
                                 </div>
                                 <div class="col-12 col-sm-6 mb-2">
                                     {% include "bag/product-info.html" %}
-                                </div>
-                                <div class="col-12 col-sm-6 order-sm-last">
-                                    <p class="my-0">Price Each: £{{ item.product.price }}</p>
-                                    <p><strong>Subtotal: </strong>£{{ item.product.price | calc_subtotal:item.quantity }}</p>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    {% include "bag/quantity-form.html" %}
+                                    <p class="my-0"><strong>Price:</strong> £{{ item.product.price }}</p>
+                                    <a id="remove_{{ item.item_id }}" class="text-dark remove-item"><i class="fa fa-trash"></i></a>
                                 </div>
                             </div>
                             <div class="row"><div class="col"><hr></div></div>
@@ -68,7 +63,7 @@
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
-                                    <th scope="col">Subtotal</th>
+                                    <th scope="col">Remove</th>
                                 </tr>
                             </thead>
 
@@ -84,10 +79,10 @@
                                         <p class="my-0">£{{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
-                                        {% include "bag/quantity-form.html" %}
+                                        <p>1</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                        <a id="remove_{{ item.item_id }}" class="text-dark remove-item"><i class="fa fa-trash"></i></a>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -122,11 +117,6 @@
 {% include 'products/includes/quantity_input_script.html' %}
 
 <script type="text/javascript">
-    // Update quantity on click
-    $('.update-link').click(function(e) {
-        var form = $(this).prev('.update-form');
-        form.submit();
-    })
 
     // Remove item and reload on click
     $('.remove-item').click(function(e) {
