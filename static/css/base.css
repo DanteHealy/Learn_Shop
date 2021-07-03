@@ -106,8 +106,20 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* ------------------------------- bootstrap toasts */
+/* ------------------------------- footer styling */
+.social-media {
+    margin: 10px;
+    color: black;
+}
 
+/*- add styling and animation to the social media icons in the footer -*/ 
+.social-media:hover {
+    color: red;    
+    transition: transform .7s; /* Animation */
+} 
+
+
+/* ------------------------------- bootstrap toasts */
 .message-container {
     position: fixed;
     top: 72px;

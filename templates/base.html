@@ -37,6 +37,7 @@
     <title>Learning Shop {% block extra_title %}{% endblock %}</title>
 
 </head>
+
     <body>
         <header class="container-fluid fixed-top">
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
@@ -137,6 +138,29 @@
 
         {% block content %}
         {% endblock %}
+
+
+        <!-- Footer -->
+        <div class="footer fixed-bottom">
+            <div class="row mx-0">
+                <div class="footer-text col-12">
+                    <!-- Facebook -->
+                    <a class="social-media" href="https://www.facebook.com" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="social-media" href="https://www.twitter.com" target="_blank" rel="noopener">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="social-media" href="https://www.instagram.com" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <!--- Copyright info and company name -->
+                    <p class="text-black">Learn Shop | © 2021</p>
+                </div>
+            </div>
+        </div>
         
         {% block postloadjs %}
         <script type="text/javascript">
