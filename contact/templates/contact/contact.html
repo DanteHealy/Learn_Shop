@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Removes background image from base.html -->
+    <div class="overlay"></div>
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                <hr>
+                <h2 class="logo-font mb-4 text-center">Contact</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+            <!-- Contact form -->
+                <form action="{% url 'contact' %}" method="post" enctype="multipart/form-data" class="form" >
+                    {% csrf_token %}
+                    {% for field in form %}
+                        {{ field | as_crispy_field }}
+                    {% endfor %}
+                    <button type="submit" id="submit-button" class="btn btn-black rounded-0 float-right">
+                        <span class="font-weight-bold">Submit</span>
+                        <span class="icon">
+                            <i class="fas fa-envelope-square"></i>
+                        </span>
+					</button>
+                </form>
+            </div>
+        </div>
+    </div>    
+    
+
+    <!-- Address -->
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                <hr>
+                <h2 class="logo-font mb-4 text-center">Where to find us</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+            <!-- Address and telephone details -->
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Learning Shop Offices</h4>
+                        <p class="card-text">School of Business and Technology.</p>
+                        <London class="card-text">10 Greycoat Pl,<br> London<br> SW1P 1SB</p>
+                        <p class="card-text"><small class="text-muted">For all inquiries please use the contact form above.</small></p>
+                    </div>
+                    <!-- Google maps iframe with 4:3 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2088.7154475141347!2d-0.13543529757839434!3d51.49642231154175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb88611cb9acb8f4!2sAdobe%20%26%20Apple%20Training%20Centres!5e0!3m2!1sen!2suk!4v1625401982183!5m2!1sen!2suk" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
