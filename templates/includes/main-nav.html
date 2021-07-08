@@ -5,7 +5,7 @@
                 Home
             </a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown header-highlight">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Courses
             </a>
@@ -21,29 +21,34 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Business Courses
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=Marketing & sales" class="dropdown-item">Marketing &amp; Sales</a>
+            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">                
                 <a href="{% url 'products' %}?category=Finance" class="dropdown-item">Finance</a>
                 <a href="{% url 'products' %}?category=Innovation" class="dropdown-item">Innovation</a>
+                <a href="{% url 'products' %}?category=Marketing" class="dropdown-item">Marketing &amp; Sales</a>
                 <a href="{% url 'products' %}?category=Soft skills" class="dropdown-item">Soft Skills</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Digital Courses
+                IT &amp; Software
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=Coding" class="dropdown-item">Coding</a>
-                <a href="{% url 'products' %}?category=Coding" class="dropdown-item">Data</a>
+                <a href="{% url 'products' %}?category=Coding" class="dropdown-item">Coding</a>                
                 <a href="{% url 'products' %}?category=System Deployment" class="dropdown-item">System Deployment</a>
             </div>
+        </li>
+
+        <li class="nav-item pr-5">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'blog' %}" aria-haspopup="true">
+                Blog
+            </a>
         </li>
 
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'contact' %}" aria-haspopup="true">
                 Contact
-            </a>            
+            </a>
         </li>
     </ul>
 </div>
