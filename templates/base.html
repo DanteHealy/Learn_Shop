@@ -34,7 +34,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Learning Shop {% block extra_title %}{% endblock %}</title>
+    <title>Learn Shop {% block extra_title %}{% endblock %}</title>
 
 </head>
 
@@ -43,7 +43,7 @@
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h2 class="logo-font text-black my-0"><strong>Learning</strong> Shop</h2>
+                        <h2 class="logo-font text-black my-0"><strong>Learn</strong> Shop</h2>
                     </a>
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -141,9 +141,9 @@
 
 
         <!-- Footer -->
-        <div class="footer fixed-bottom style-footer">
+        <footer class="style-footer text-center">
             <div class="row mx-0">
-                <div class="footer-text col-3">
+                <div class="footer-pos col-12">
                     <!-- Facebook -->
                     <a class="social-media" href="https://www.facebook.com" target="_blank" rel="noopener">
                         <i class="fab fa-facebook-f fa-2x"></i>
@@ -157,10 +157,10 @@
                         <i class="fab fa-instagram fa-2x"></i>
                     </a>
                     <!--- Copyright info and company name -->
-                    <p>Learn Shop | © 2021</p>
+                    <p class="footer-text">Learn Shop | © 2021</p>
                 </div>
             </div>
-        </div>
+        </footer>
         
         {% block postloadjs %}
         <script type="text/javascript">

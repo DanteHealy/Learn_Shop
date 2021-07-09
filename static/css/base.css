@@ -113,13 +113,27 @@ input[name='q']::placeholder {
 }
 
 /* ------------------------------- footer styling */
+
+footer {
+    position: relative;
+}
+
 .style-footer {    
     color: black;
 }
 
+.footer-pos {
+    top: 100px;
+    position: absolute;
+}
+
 .social-media {
-    margin: 10px;    
+    margin: 15px;    
     color: black;
+}
+
+.footer-text {
+    font-size: 21px;
 }
 
 /*- add styling and animation to the social media icons in the footer -*/ 
