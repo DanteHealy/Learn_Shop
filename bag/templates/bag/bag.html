@@ -55,7 +55,7 @@
                             </a>	
                         </div>
                     </div>
-                    <div class="table-responsive rounded d-none d-md-block pb-5">
+                    <div class="table-responsive rounded d-none d-md-block">
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
                                 <tr>
@@ -114,22 +114,26 @@
 
 {% block postloadjs %}
 {{ block.super }}
-{% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
+    <script type="text/javascript">
+        // back to top button
+        $('.btt-link').click(function(e) {
+            window.scrollTo(0,0)
+        })
+    </script>
 
+    <script type="text/javascript">
     // Remove item and reload on click
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var item_id = $(this).data('product');
         var url = `/bag/remove/${itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'product': item_id};
+        var data = {'csrfmiddlewaretoken': csrfToken};
 
         $.post(url, data)
          .done(function() {
-             location.reload();
+            location.reload();
          });
-    })
-</script>
+    }) 
+    </script>
 {% endblock %}
