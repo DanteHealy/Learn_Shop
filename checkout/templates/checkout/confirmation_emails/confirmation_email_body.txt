@@ -1,0 +1,23 @@
+Dear {{ order.username }},
+
+This is a confirmation of your order at Learn Shop on {{ order.date }}.
+
+Brief Summary:
+    Order Number: {{ order.order_number }}
+    Order Date: {{ order.date }}
+
+    Order Total: £{{ order.order_total }}
+    Discount: £{{ order.discount_total }}
+    Grand Total: £{{ order.grand_total }}
+
+All course access links are available immediately in your Learn Shop user account under Enrolled Courses.
+
+We also have a blog section for our latest learning thought leadership so feel free to comment. 
+
+Any issues, please feel free to contact Learn Shop using the contact form on the main Learn Shop website.
+
+Happy learning!
+
+Sincerely,
+
+Giles - Learn Shop Admin
