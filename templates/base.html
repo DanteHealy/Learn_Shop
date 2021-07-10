@@ -15,7 +15,7 @@
 
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">        
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Blinker&family=Gugi&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -43,7 +43,7 @@
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h2 class="logo-font text-black my-0"><strong>Learn</strong> Shop</h2>
+                        <img class="logo" src="{{ MEDIA_URL }}logo.jpg" alt="logo">
                     </a>
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -66,7 +66,11 @@
                             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
                                     <div><i class="fas fa-user-graduate fa-lg"></i></div>
-                                    <p class="my-0">My Account</p>
+                                    {% if request.user.is_authenticated %}
+                                        <p class="my-0 font-weight-bold">{{ user|title }}</p>
+                                    {% else %}
+                                        <p class="my-0">Login</p>
+                                    {% endif %}
                                 </div>
                             </a>
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -74,7 +78,7 @@
                                     {% if request.user.is_superuser %}
                                         <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                     {% endif %}
-                                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                                    <a href="{% url 'profile' %}" class="dropdown-item">My Courses</a>
                                     <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                                 {% else %}
                                     <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
