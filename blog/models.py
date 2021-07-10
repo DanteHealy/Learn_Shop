@@ -11,15 +11,15 @@ class BlogPost(models.Model):
     updated = models.DateTimeField(auto_now=True, blank=True)
 
 def __str__(self):
-    return self.title +'|'+ self.author
+    return self.title +'|'+ self.user
 
 
 class Comment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    post = models.ForeignKey(BlogPost, on_delete=models.CASCADE)
+    post = models.ForeignKey(BlogPost, on_delete=models.CASCADE, related_name='comment')
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
     comment = models.TextField(default=None, blank=False, null=False)
 
-    def __str__(self):
-        return f'Comment by {self.user} on {self.post}'
+def __str__(self):
+    return f'Comment by {self.user} on {self.post}'
 
