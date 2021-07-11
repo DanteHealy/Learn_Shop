@@ -1,8 +1,8 @@
-![Am I responsive image](#)
+![Am I responsive image](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/am-i-responsive.jpg)
 
 # Learning Shop
 
-[Learn Shop](https://dante-learn-shop.herokuapp.com/) is an eCommerce platform offering high quality affordable digital learning products to enhance a customer's professional skills.
+[Learn Shop](https://dante-learn-shop.herokuapp.com/) is an eCommerce platform offering high quality, affordable digital learning products to enhance a customer's professional skills.
 
 The platform is intended to offer a range of job related and marketable skills across a broad range of categories from general business to technical IT courses. The aim is to make learning accessible whilst increasing our customer's income through improved capability. 
 
@@ -37,7 +37,9 @@ The platform is intended to offer a range of job related and marketable skills a
     - 3.0 Blog page 
         3.0.1 Blog Detail Page
 
-    - 3.1 Features not implemented
+    - 3.1 Toasts
+
+    - 3.2 Features not implemented
 
 - [3 Technologies Used](#3-Technologies-Used)
     - 3.1	Languages
@@ -120,38 +122,52 @@ The purpose of the site is to:
 
 #### 1.2 Wireframes
 
-The wireframes were created using Balsamiq to develope the basic layout structure of the site on both full screen desk top and mobile views. 
+The [wireframes](https://github.com/DanteHealy/Learn_Shop/tree/main/readme/wireframes) were created using Balsamiq to develope the basic layout structure of the site on both full screen desk top and mobile views. 
 
 - Home page
+![home page](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/landing-page.png)
 
 - Products 
+![Product](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/products-list.png)
+
 - Product page (individual)
-- Product Management add a product
-- Product Management edit a product 
+![Product details](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/product-page.png)
 
 - Shopping bag 
+![bag](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/shopping-cart.png)
+
 - Checkout 
+![checkout](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/checkout.png)
 
 - User registration
+![registration](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/user-registration.png)
+
 - User Log In 
+![login](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/user-login-page.png)
+
 - My profile 
+![profile](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/user-profile-page.png)
 
 - Contact page
-- Blog page 
+![Contact](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/contact-page.png)
 
+- Blog page 
+![blog](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/blog-page.png)
+
+![blog details](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/blog-details.png)
+
+During the development process some of the elements of actual website changed versus the original design, but the main elements of the design remain the same. 
 
 
 #### 1.3 Design Features 
 
-Font
-To be updated
+Font:
+Font used was Blinker for a modern sans serif based style. 
 
 Colour scheme selection: 
-To be updated
+I selected some professional looking colours - black, greys, blues and white shades.  This is a safe colour scheme to express the professional target market for our courses. 
 
-Colour scheme
-![color scheme](#)
-
+![color scheme](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/coolers.jpg)
 
 
 [Return to Contents](#Contents)
@@ -163,74 +179,112 @@ Colour scheme
 I used PowerPoint, including the stock images, to create the home page image with a student (original photograph was edited to remove the background and substitute with plan background color). 
 The call to action button invites visitors to browse the online courses on offer within the store. 
 
+![home page](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/home.jpg)
 
 #### 2.1.1 Header (applied to all pages)
 A Logo section at the top left of the page with a search bar and navigation links across the top including a 'My Account' and 'Checkout Basket' icon. There is also links to the relevants sectison of the website and a banner at the bottomo of the header for a discount promotion when a spending threshold is reached (£50 worth of courses earns a 10% discount to encourage further purchases).
 
+![header](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/header.jpg)
 
 #### 2.1.2 Footer (applied to all pages)
 The footer is a simple transparent footer at the bottom of the page. 
 
+![Footer](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/footer.jpg)
 
 ### 2.2 Product List Page
 The product cards show an image, the course title, a price, tags and rating. The cards highlight with a grey shadow on hover so the user knows which card they will open on click. 
 
+![Product list](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/courses.jpg)
 
 ### 2.3 Individual Product Page
 The inividual product page provides the same summary information plus a detailed description of the course plus the buttons to return to shopping view or add the course to the shopping cart. 
 As these are online courses the site user will only be able to purchase one course per user account. 
 
+Normal user
+![Product details](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/product-details.jpg)
+
+Super user
+![Product details](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/product-details-s.jpg)
 
 #### 2.3.1 Individual Product Page - add a product
 List the product details where new products can be added by SuperUsers with admin access. 
 
+![Product details - add product](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/product-add.jpg)
 
 #### 2.3.1 Individual Product Page - edit a product
 List the product details where existing products can be edited by SuperUsers with admin access. 
 
+![Product details - edit product](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/product-edit.jpg)
 
 ### 2.4 Shopping Bag
 The shopping bag will list the items selected for purchase by the user. There is the option to remove items and also return the the main product listing to continue shopping. 
 
+![Shopping bag](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/bag.jpg)
 
 ### 2.5 Secure Checkout
 The user is provided with the option to view their items and either return to the shopping basket to adjust the basket if necessary or to continue through to purchase by entering the payment details and completing the order. Only registered users can checkout courses, this is to enable customers to view their purchasing history. 
 
+![Secure checkout](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/checkout.jpg)
 
 ### 2.5.1 Secure Checkout - Success
 Secure checkout provides a confimrmation with a summary of the users purchases.  The checkout will also trigger an email (from a dedicated Google email account set up for this project.)
 
+![Secure Checkout Success](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/success.jpg)
 
 ### 2.6 User Registration
 The 'Register' page contains a card where a new user can enter their user name, email and password credentials. 
 
+![New User Registration page](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/register.jpg)
 
 ### 2.7 User Login
 User login enables user to sign-in to their account and thi
 
+![User Login](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/login.jpg)
 
 ### 2.8 User's profile Page
-The profile page has the user's published reviews. 
+The profile page has the user's previous purchases plus a link to the site for the course purchase in order to enroll. Note the link provides a dummy website as this was not functionality that was deployed.
+
+![User profile page](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/profile.jpg)
+
+
+As there are no real courses - the course link takes the user to a dummy URL 
+![User profile page](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/enroll.jpg)
 
 
 ### 2.9 Contact Page
 The contact page has a contact form to provide feedback to the site admin and location details for the (fictional) offices with a Google maps iframe for where to find us. 
 
+Part 1 - Contact form: 
+![Contact page](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/contact1.jpg)
+
+Part 2 - Location details: 
+![Contact page part2](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/contact2.jpg)
 
 ### 3.0 Blog Page
-The Blog page has a list of links to blogs produced by Admins of the site.  This can been accessed by the users who are able to read the articles and comment if they are registered users. 
+The Blog page has a list of links to blogs produced by Admins of the site.  This can been accessed by all site visitors. 
 
+![Blog page](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/blog.jpg)
 
 #### 3.0.1 Blog Detail Page
-Users will be able to read the articles and registered users can comment on the blog posts. 
+Users will be able to read the articles prepared by Site owner and registered users can comment on the blog posts. 
+
+![Blog details ](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/blog-detail.jpg)
 
 
-### 3.1 Features not implemented 
+#### 3.1 Toasts
+In addition, there are Bootstrap toast alerts in the top right hand corner which show events such as successful purchases, errors or information. 
+
+![Toasts](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/toasts.jpg)
+
+### 3.2 Features not implemented 
 This is a site for selling courses, but not a platform for hosting course material. The ideal solution would be to have the content hosted here, but due to technical limitations it is not feasible to host video and other documents for the purposes of education. 
 
-Having a platform that hosts content for sale and also leave reviews on the course material for customers would make the vision associated with this project more complete. 
+Having a platform that hosts content for sale and also leave reviews on the course material for customers would make the vision associated with this project more complete. Additionally, extending to the Udemy example Users would be able to host their own learning material on the site with revenue sharing arrangements to further monetize the platform and increase the offering and reach. 
 
-The contacts page that sends an email to the site admins rather than just recording the messages to the Django backend database. 
+The purchases are limited to quantity of one online course per user per order as these cannot be gifted by the purchaser to someone else. However, if a user wants to buy the same course again the system will allow it. The intention would be to provide a sign-in link to a hosting platform for the actual learning material where the student/customer can enroll. 
+
+Have the contact page send email messages to the site admins rather than just recording the messages to the Django backend database. 
+
 
 [Return to Contents](#Contents)
 
@@ -241,7 +295,7 @@ The contacts page that sends an email to the site admins rather than just record
 [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [Python](https://www.python.org/).
 
 ### 3.2 Database  
-To be updated
+PostgreSQL and sqlite3 were used for the production of this website. 
 
 ### 3.3 Libraries and Frameworks 
 
@@ -254,16 +308,19 @@ Google Fonts API
 
 ### 3.4 Tools 
 - Git and GitHub: Used for version control as well as storing the project files and source code.
-- Gitpod: An online IDE linked to the GitHub repository. 
-- CDN references: cdnjs - The #1 free and open source CDN built to make life easier for developers
-- Secret Key Generator:  RandomKeygen - The Secure Password & Keygen Generator
-- Font-Awesome: Sourcing icons used across the site 
+- VS Code: A local IDE linked to the GitHub repository. 
+- Heroku: A cloud based platform for hosting websites remotely. 
+- CDN references: cdnjs - The #1 free and open source CDN built to make life easier for developers.
+- Secret Key Generator:  RandomKeygen - The Secure Password & Keygen Generator.
+- Font-Awesome: Sourcing icons used across the site.
 - Google Fonts API: Used to source the text font. 
-- Balsamiq: for wireframes
-- Canva: Used for the high fidelity mockups and applying the [colour wheel tool](https://www.canva.com/colors/color-wheel/).
-- RandomKeygen: Used to generate the SECRET_KEY for Flask.
+- Balsamiq: for wireframes.
+- Coolors.co: For colour scheme generator. 
+- RandomKeygen: Used to generate the SECRET_KEY for Django.
 - Favicon.io: Used to convert image to Favicon. 
-- PowerPoint for the homepage and course images. 
+- PowerPoint for the logo, homepage and course images.
+- Excel for testing files, tracking features and Project management schedule.  
+- OneNote for tracking all bugs that needed to be fixed, both during development and post deployment. 
 - Am I Responsive?: Used to view the website across multiple screen sizes simultaneously. 
 
 
@@ -274,16 +331,14 @@ Google Fonts API
 
 ### 4.1 Site Layout 
 
-The [site layout](#) can be found here. 
-
 Basic layout includes the the web pages and interactive elements (cards) indicating user access privileges. 
 
-
+![site layout](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site-topology.pdf)
 ### 4.2 Database architecture
 
-The [database architecture](#) can be found here. 
+The Database Schema can be found here. 
 
-To be updated
+![database architecture](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/database-schema.pdf)
 
 
 ### 4.3 Project Management 
@@ -314,26 +369,28 @@ I had family, friends and work colleagues review the site and provide their feed
 - No errors found. 
 
 [Python PEP8 Validator](http://pep8online.com/)
-- TBD
+- No errors found.
 
 [DevTools lighthouse](https://developers.google.com/speed/pagespeed/insights/) 
-- Remove redundant code and replace inefficient png format images with jpeg. 
+- Remove redundant code and replace inefficient png format images with jpg. 
+
+![lighthouse](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/readme-tests/lighthouse.jpg)
+
 
 ### 5.2 Manual testing 
 
-- Tested all links are working. 
-- Check site was responsive 
-    - To be updated
+The user stories were tested and documented [here](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/readme-tests/testing-use-cases.pdf). All testing was performed end to end. 
 
-- Checked all functionality including: 
-    
-    - To be updated
-
-- User accesses
-    - To be updated
+In addition, the manual testing was performed across all scenarios including; 
+- Visitor, not registered or logged in 
+- Normal registered user
+- As an Admin-SuperUser or Site owner 
+- Email confirmations; 
+    - On registration [here](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/readme-tests/email-register-confirmation.pdf).  
+    - On successful purchase [here](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/readme-tests/email-order-confirmation.pdf)
 
 ### 5.3 Bugs identified
-Bugs were recorded on a tracking list and retained until fixed. 
+Bugs were recorded on a tracking list (OneNote) and retained until fixed. 
 
  - Fixed 
     - Stripe payment integration returned a 400 error - fixed by removing blocking on cross-site tracking in the cookies settings within the browser. 
@@ -355,7 +412,7 @@ Bugs were recorded on a tracking list and retained until fixed.
  - Still remaining 
 
  The following bugs were still unresolved by the time I was due to submit the project:     
-    -  
+    -  Favicon not working on the live deployed site. 
 
 
 [Return to Contents](#Contents)
@@ -428,12 +485,13 @@ This website was deployed using VS Code using the following steps:
 Parts of the code were reused from the original Boutiqu Ado project from the "Full Stack Frameworks with Django" module. 
 I took influence from Sam Laubscher's website Flowstate Creative Solutions, MS4 project for the contact page and some of the styling cues. 
 Some code was applied using the book "Django 3 By Example" from Antonio Mele. 
-The online e-learning site "Udemy" was taken for the platform idea and course promotional content. 
 
 
 ### 7.1 Content
 
-To be updated
+The online e-learning site "Udemy" was taken for the example platform feature ideas and course promotional content. 
+For styling I took creative design cues from the Udacity learning portal. 
+The ideas for the blogs were based on my own personal experience with both classroom and online learning. 
  
 
 ### 7.2 Acknowledgements
