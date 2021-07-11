@@ -268,7 +268,7 @@ The Blog page has a list of links to blogs produced by Admins of the site.  This
 #### 3.0.1 Blog Detail Page
 Users will be able to read the articles prepared by Site owner and registered users can comment on the blog posts. 
 
-![Blog details ](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/blog-detail.jpg)
+![Blog details ](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site/blog-details.jpg)
 
 
 #### 3.1 Toasts
@@ -310,6 +310,7 @@ Google Fonts API
 - Git and GitHub: Used for version control as well as storing the project files and source code.
 - VS Code: A local IDE linked to the GitHub repository. 
 - Heroku: A cloud based platform for hosting websites remotely. 
+- Stripe payments API: for processing customer payments. 
 - CDN references: cdnjs - The #1 free and open source CDN built to make life easier for developers.
 - Secret Key Generator:  RandomKeygen - The Secure Password & Keygen Generator.
 - Font-Awesome: Sourcing icons used across the site.
@@ -333,12 +334,12 @@ Google Fonts API
 
 Basic layout includes the the web pages and interactive elements (cards) indicating user access privileges. 
 
-![site layout](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site-topology.pdf)
+[Link to site layout.](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/site-topology.pdf)
 ### 4.2 Database architecture
 
 The Database Schema can be found here. 
 
-![database architecture](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/database-schema.pdf)
+[Link to database architecture.](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/database-schema.pdf)
 
 
 ### 4.3 Project Management 
@@ -360,18 +361,22 @@ I had family, friends and work colleagues review the site and provide their feed
 ### 5.1 System testing 
 
 [HTML Validator](https://validator.w3.org/)
-- Code passed except for some error warnings on jinja template code. 
+- Code passed except for some error warnings on duplicate ID's and references to filtering by subject with spaces e.g. soft skills as well external sites. 
+- Some false errors identified: 
+    - references to unmatched end tags which I couldn't see (e.g. paragraph end tags in product_detail.html) despite searching the pages using CTRL+F. 
+    - h5 tags wrapped inside p tags that were not the case. 
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/)
 - No errors found. 
 
 [JavaScript Validator](https://jshint.com/)
-- No errors found. 
+- One missing semi-colon added. 
 
 [Python PEP8 Validator](http://pep8online.com/)
-- No errors found.
+- Flake8 Linter was used to indentify PEP8 compliance and remove any issues.
 
 [DevTools lighthouse](https://developers.google.com/speed/pagespeed/insights/) 
+- The overall performance score is acceptable. 
 - Remove redundant code and replace inefficient png format images with jpg. 
 
 ![lighthouse](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/readme-tests/lighthouse.jpg)
@@ -379,7 +384,8 @@ I had family, friends and work colleagues review the site and provide their feed
 
 ### 5.2 Manual testing 
 
-The user stories were tested and documented [here](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/readme-tests/testing-use-cases.pdf). All testing was performed end to end. 
+The user stories were tested and documented [here](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/readme-tests/testing-use-cases.pdf). 
+All testing was performed end to end. 
 
 In addition, the manual testing was performed across all scenarios including; 
 - Visitor, not registered or logged in 
@@ -483,7 +489,7 @@ This website was deployed using VS Code using the following steps:
 ## 7 Credits 
 
 Parts of the code were reused from the original Boutiqu Ado project from the "Full Stack Frameworks with Django" module. 
-I took influence from Sam Laubscher's website Flowstate Creative Solutions, MS4 project for the contact page and some of the styling cues. 
+I took influence from Sam Laubscher's website Flowstate Creative Solutions, MS4 project for the contact page app and some of the styling cues. 
 Some code was applied using the book "Django 3 By Example" from Antonio Mele. 
 
 
@@ -499,7 +505,8 @@ The ideas for the blogs were based on my own personal experience with both class
 I would like to give a huge and sincere thank you to: 
 
 - My lovely wife for her enduring patience with my coding and for kindly reviewing and being a tester for the website
-- My mentor Spencer Barribal, Sam Laubscher and Simon Vardy for their guidance, emotional and techincal support to keep me motivated to complete this final course project
+- Special thanks to Sam Laubscher for helping me with the website. 
+- My mentor Spencer Barribaland for his guidance, encouragement and techincal support to keep me motivated to complete this final course project. 
 - A special mention to Jo and Igor from Tutor Assistance for helping me fix the last tricky bug and reinforcing the importance of indentation in Python code. 
 - My fellow students in CI plus the CI Tutor support for the technical guidance for their continued support and encouragement
 

@@ -4,11 +4,6 @@ from .forms import ContactForm
 
 # Create your views here.
 
-""" A view to return the contact page 
-def contact(request):
-   
-    return render(request, 'contact/contact.html')
-"""    
 
 def contact(request):
     """ A view to return the contact page """
@@ -38,28 +33,3 @@ def contact(request):
     }
 
     return render(request, template, context)
-
-
-
-
-""" A view to create a form and send an email 
-def post_form(request, post_id):
-    # Retrieve post by id
-    post = get_object_or_404(Post, id=post_id, status='published')
-    sent = False
-
-    if request.method == 'POST':
-        # Form was submitted 
-        form = EmailPostForm(request.POST)
-        if form.is_valid():
-            # Form fields passed validation
-            cd = form.cleaned_data
-            post_url = request.build_absolute_url(post.get_absolute_url)
-            subject = f"{cd['name']} sends you a message regarding " \
-                    f"{post.reason}"
-            
-            sent = True
-    else:
-        form = EmailPostForm()
-    return render(request, 'contact/contact.html', {'post': post,'form': form, 'sent': sent})
-"""

@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-CONTACT_REASONS = (    
+CONTACT_REASONS = (
     ('general_inquiry', 'General Inquiry'),
     ('product_advice', 'Product Advice'),
     ('technical_support', 'Technical Support'),
@@ -22,7 +22,7 @@ class Contact(models.Model):
         default='general_enquiry',
         null=False,
         blank=False,
-    )    
+    )
     name = models.CharField(
         max_length=50,
         null=False,

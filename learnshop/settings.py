@@ -15,10 +15,8 @@ import os.path
 import environ
 import dj_database_url
 
-from pathlib import Path
-
-
 import mimetypes
+
 mimetypes.add_type("text/css", ".css", True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -42,12 +40,9 @@ else:
     DEBUG = False
 
 
-# Apply ngrok external hosting whilst using VS Code to build project (remove after deployment)! 
-ALLOWED_HOSTS = ['dante-learn-shop.herokuapp.com','127.0.0.1','4f65db61ba5d.ngrok.io', 'localhost']
-
+ALLOWED_HOSTS = ['dante-learn-shop.herokuapp.com', '127.0.0.1', 'localhost']
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -97,7 +92,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -118,7 +113,7 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
-    'allauth.account.auth_backends.AuthenticationBackend',    
+    'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
 SITE_ID = 1
@@ -137,7 +132,7 @@ WSGI_APPLICATION = 'learnshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if 'DATABASE_URL' in os.environ: 
+if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(env('DATABASE_URL'))
     }
@@ -216,7 +211,6 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
 
 
 # Stripe

@@ -3,6 +3,7 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
+
 def bag_contents(request):
 
     bag_items = []
@@ -27,9 +28,9 @@ def bag_contents(request):
         discount = round(total * Decimal(settings.DISCOUNT_PERCENTAGE / 100))
     else:
         discount = 0
-    
+
     discount_delta = settings.DISCOUNT_THRESHOLD - total
-    
+
     grand_total = total - discount
 
     context = {
