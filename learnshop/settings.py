@@ -43,7 +43,7 @@ else:
 
 
 # Apply ngrok external hosting whilst using VS Code to build project (remove after deployment)! 
-ALLOWED_HOSTS = ['dante-learn-shop.herokuapp.com','127.0.0.1','4a96fdebffba.ngrok.io', 'localhost']
+ALLOWED_HOSTS = ['dante-learn-shop.herokuapp.com','127.0.0.1','4f65db61ba5d.ngrok.io', 'localhost']
 
 
 # Application definition

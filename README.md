@@ -167,8 +167,10 @@ The call to action button invites visitors to browse the online courses on offer
 #### 2.1.1 Header (applied to all pages)
 A Logo section at the top left of the page with a search bar and navigation links across the top including a 'My Account' and 'Checkout Basket' icon. There is also links to the relevants sectison of the website and a banner at the bottomo of the header for a discount promotion when a spending threshold is reached (£50 worth of courses earns a 10% discount to encourage further purchases).
 
+
 #### 2.1.2 Footer (applied to all pages)
 The footer is a simple transparent footer at the bottom of the page. 
+
 
 ### 2.2 Product List Page
 The product cards show an image, the course title, a price, tags and rating. The cards highlight with a grey shadow on hover so the user knows which card they will open on click. 
@@ -211,7 +213,6 @@ User login enables user to sign-in to their account and thi
 The profile page has the user's published reviews. 
 
 
-
 ### 2.9 Contact Page
 The contact page has a contact form to provide feedback to the site admin and location details for the (fictional) offices with a Google maps iframe for where to find us. 
 
@@ -229,6 +230,7 @@ This is a site for selling courses, but not a platform for hosting course materi
 
 Having a platform that hosts content for sale and also leave reviews on the course material for customers would make the vision associated with this project more complete. 
 
+The contacts page that sends an email to the site admins rather than just recording the messages to the Django backend database. 
 
 [Return to Contents](#Contents)
 
@@ -272,7 +274,7 @@ Google Fonts API
 
 ### 4.1 Site Layout 
 
-To be updated
+The [site layout](#) can be found here. 
 
 Basic layout includes the the web pages and interactive elements (cards) indicating user access privileges. 
 
@@ -298,7 +300,8 @@ The project was managed applying lists of User stories and a calendar in Excel t
 
 The general approach was to log all observed bugs as I was coding using a list and then return to fix them as required. The tool used was OneNote. 
 
-I had family, friends and work colleagues review the site and provide their feedback. 
+I had family, friends and work colleagues review the site and provide their feedback by viewing the site on both their laptops, desktops and mobile browsers. 
+
 ### 5.1 System testing 
 
 [HTML Validator](https://validator.w3.org/)
@@ -330,14 +333,28 @@ I had family, friends and work colleagues review the site and provide their feed
     - To be updated
 
 ### 5.3 Bugs identified
+Bugs were recorded on a tracking list and retained until fixed. 
 
  - Fixed 
-    - To be updated
+    - Stripe payment integration returned a 400 error - fixed by removing blocking on cross-site tracking in the cookies settings within the browser. 
+    - Webhook missing CSRF token - fixed, 
+    - Profile submit buttons not linked to the CSS styling - [fixed](https://stackoverflow.com/questions/5834014/lf-will-be-replaced-by-crlf-in-git-what-is-that-and-is-it-important)
+    - Style rendering from static/css/base.css.
+    - Webhook errors (500, 404 etc.) - fixed. 
+    - Broken links on the navigation menu. 
+    - Remove redundant database data fields in the Product detail views. 
+    - Create Blog app pages and Blog detail views. 
+    - Heroku deployment failed message. 
+    - Update Github Repo name from Learning sho to Learn shop. 
+    - Card hover effect too sharp on transition animation and shadow effect. 
+    - Adjust footer to be located at bottom of the page. 
+    - Checkout success looping so creating duplicate orders (indentation issue). 
+    - Remove purchasing multiple online courses (assume only one course needed per student). 
+
 
  - Still remaining 
 
- The following bugs were still unresolved by the time I was due to submit the project: 
-    - Footer at the bottom of the page doesn't stick. I had various attempts and the option that worked (Bootstrap fixed-bottom) covered the submit and navigation button as well as the payment submit button when a number of courses were purchased. The footer body is transparent so it's not apparent to the user that the footer was covering the button. In order to avoid a bad user experience by the buttons at the bottom of the page seemingly not working with no feedback as to why. 
+ The following bugs were still unresolved by the time I was due to submit the project:     
     -  
 
 
@@ -425,7 +442,8 @@ I would like to give a huge and sincere thank you to:
 
 - My lovely wife for her enduring patience with my coding and for kindly reviewing and being a tester for the website
 - My mentor Spencer Barribal, Sam Laubscher and Simon Vardy for their guidance, emotional and techincal support to keep me motivated to complete this final course project
-- My fellow students in CI plus the CI Tutor support for the technical guidancefor their continued support and encouragement
+- A special mention to Jo and Igor from Tutor Assistance for helping me fix the last tricky bug and reinforcing the importance of indentation in Python code. 
+- My fellow students in CI plus the CI Tutor support for the technical guidance for their continued support and encouragement
 
 They have all been super supportive during this project and I appreciate their feedback and advice which helped 
 to reach this final major milestone within the course.

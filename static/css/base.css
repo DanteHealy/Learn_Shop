@@ -10,6 +10,12 @@ body {
     font-family: 'Blinker';
 }
 
+a,
+a:hover {
+    color: #555;
+    text-decoration: none;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -33,10 +39,52 @@ body {
     padding: 0;
 }
 
-.shop-course-button {
-    background: black;
+.navbar-light .navbar-nav .nav-link, 
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #053050;
+    transition: transform .7s;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #053050;
+}
+
+.discount-banner {
+    background-color: #053050;
     color: white;
+}
+
+.landing-page-title {
+    text-shadow: 1px 4px 6px black;
+    color: white;
+}
+
+.shop-course-button {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     min-width: 260px;
+    box-shadow: 5px 5px 11px 1px #0000005e;
+}
+
+.shop-course-button:focus {
+    border: #0000005e;
+    box-shadow: inset 5px 5px 11px 1px #0000005e;
+    transform: translateX(2px) translateY(2px);
+}
+
+.btn-icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .btn-black {
@@ -44,26 +92,31 @@ body {
     color: white;
 }
 
-.btn-outline-black {
+.btn-blue {
+    background: #053050;
+    color: white;
+}
+
+.btn-outline-blue {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: #053050 !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
+.btn-outline-blue:hover,
+.btn-outline-blue:active,
+.btn-outline-blue:focus {
+    background: #053050;
     color: white !important;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
+.btn-blue:hover,
+.btn-blue:active,
+.btn-blue:focus {
+    background: #074f86;
     color: white;
 }
 
@@ -75,8 +128,16 @@ body {
     border: 1px solid black !important;
 }
 
+.border-blue {
+    border: 1px solid #053050 !important;
+}
+
 .bg-black {
     background: #000 !important;
+}
+
+.bg-blue {
+    background-color: #053050;
 }
 
 .overlay {
@@ -90,14 +151,26 @@ body {
 }
 
 /*------------ Shadow effect on hover with course cards */
+.course-card {
+    transition: 0.3s;
+}
+
 .course-card:hover {
     box-shadow: 3px 3px 20px 5px grey;
-    transform: translateX(5px);
+    transition: 0.3s;
+}
+
+.course-card:active {
+    box-shadow: 3px 3px 20px 5px grey;
+
+    transform: translateY(10px);
+    transition: 0.3s;
 }
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
+    transition: 0.3s;
 }
 
 .btt-button {
@@ -107,6 +180,11 @@ a.category-badge > span.badge:hover {
     bottom: 10px;
     right: 10px;
     z-index: 1;
+}
+
+.btt-button {
+    color: rgb(88, 88, 88);
+    border: 1px solid rgb(88, 88, 88)!important;
 }
 
 .btt-link,
@@ -125,8 +203,12 @@ footer {
     position: relative;
 }
 
+.footer-pos a:hover {
+    transition: 0.3s;
+}
+
 .style-footer {    
-    color: black;
+    color: rgb(88, 88, 88);
 }
 
 .footer-pos {
@@ -136,7 +218,6 @@ footer {
 
 .social-media {
     margin: 15px;    
-    color: black;
 }
 
 .footer-text {
@@ -260,8 +341,8 @@ footer {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #053050;
+    border: 1px solid #053050;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -274,8 +355,8 @@ footer {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
-    border-color: #222;
+    background-color: #074f86;
+    border-color: #074f86;
 }
 
 .allauth-form-inner-content a {

@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
-
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -12,78 +10,78 @@
 {% endblock %}
 
 {% block content %}
-<!-- Removes background image from base.html -->
-<div class="overlay"></div>
+    <!-- Removes background image from base.html -->
+    <div class="overlay"></div>
 
-<div class="container pt-5">
-    <div class="row justify-content-center">
-        <div class="col">
-            <h2 class="mb-0 text-center">
-                <u>{{ blogpost.title }}</u><br> 
-            </h2> 
-            <h4 class="text-center">
-               by  {{ blogpost.user|title }}  on  {{ blogpost.created }}
-            </h4>
-        </div>
-    </div>
-</div>
-
-<div class="card-body">
-    <div class="container">
+    <div class="container pt-5">
         <div class="row justify-content-center">
-            <div class="col-8">                
-                <h5>
-                    {{ blogpost.body_text|linebreaks }}
-                </h5>
+            <div class="col">
+                <h2 class="mb-0 text-center">
+                    <u>{{ blogpost.title }}</u><br> 
+                </h2> 
+                <h4 class="text-center">
+                by  {{ blogpost.user|title }}  on  {{ blogpost.created }}
+                </h4>
             </div>
         </div>
     </div>
-</div>
-<hr>
-{% for c in comment %}
-<div class="text-center">
-<p>
-{{c.comment|linebreaks}}
-<div class="col-4 offset-4">
-    <hr>
-</div>
-<span class="text-muted">Posted by: {{ c.user|title }} on {{c.created_at}}</span>
 
-<hr>
-</p>
-</div>
-
-   
-    
-    <div class="container pt-4">
-        <div class="row justify-content-center">
-            <div class="col-8">
-                <h5 class="text-center">Post comment:</h5>
-            </div>            
-            <textarea name="" id="" cols="120" rows="10"  placeholder="Enter your comment">
-            </textarea>
-        </div>
-        <div class="row justify-content-around">
-            <div class="text-left mt-5 mb-2">
-                <a  href="{% url 'blog' %}" class="btn btn-outline-black rounded-0">
-					<span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="font-weight-bold">Return to blogs</span>
-				</a>
-            </div>            
-            <div class="submit-button text-right mt-5 mb-2">
-                <button id="submit-button" class="btn btn-black rounded-0">
-					<span class="font-weight-bold">Submit</span>
-				    <span class="icon">
-						<i class="fas fa-comment"></i>
-					</span>
-				</button>
-            </div>        
+    <div class="card-body">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">                
+                    <h5>
+                        {{ blogpost.body_text|linebreaks }}
+                    </h5>
+                </div>
+            </div>
         </div>
     </div>
 
+    <div>
+        <hr>
+        {% for c in comment %}
+        <div class="text-center">
+            <p>
+                {{c.comment|linebreaks}}
+                <div class="col-4 offset-4">
+                    <hr>
+                </div>
+                <span class="text-muted">Posted by: {{ c.user|title }} on {{c.created_at}}</span>
 
-{% endfor %}
+                <hr>
+            </p>
+        </div>
+        {% endfor %}
+
+
+        <div class="container pt-4">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <h5 class="text-center">Post comment:</h5>
+                </div>            
+                <textarea name="" id="" cols="120" rows="10"  placeholder="Enter your comment">
+                </textarea>
+            </div>
+            <div class="row justify-content-around">
+                <div class="text-left mt-5 mb-2">
+                    <a  href="{% url 'blog' %}" class="btn btn-outline-blue rounded-0">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="font-weight-bold">Return to blogs</span>
+                    </a>
+                </div>            
+                <div class="submit-button text-right mt-5 mb-2">
+                    <button id="submit-button" class="btn btn-blue rounded-0">
+                        <span class="font-weight-bold">Submit</span>
+                        <span class="icon">
+                            <i class="fas fa-comment"></i>
+                        </span>
+                    </button>
+                </div>        
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
