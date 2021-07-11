@@ -161,10 +161,10 @@ During the development process some of the elements of actual website changed ve
 
 #### 1.3 Design Features 
 
-Font:
+##### Font:
 Font used was Blinker for a modern sans serif based style. 
 
-Colour scheme selection: 
+##### Colour scheme selection: 
 I selected some professional looking colours - black, greys, blues and white shades.  This is a safe colour scheme to express the professional target market for our courses. 
 
 ![color scheme](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/coolers.jpg)
@@ -314,6 +314,7 @@ Google Fonts API
 - CDN references: cdnjs - The #1 free and open source CDN built to make life easier for developers.
 - Secret Key Generator:  RandomKeygen - The Secure Password & Keygen Generator.
 - Font-Awesome: Sourcing icons used across the site.
+- Gmail: for a free dedicated email account to be set up for register and order confirmations.
 - Google Fonts API: Used to source the text font. 
 - Balsamiq: for wireframes.
 - Coolors.co: For colour scheme generator. 
@@ -418,7 +419,7 @@ Bugs were recorded on a tracking list (OneNote) and retained until fixed.
  - Still remaining 
 
  The following bugs were still unresolved by the time I was due to submit the project:     
-    -  Favicon not working on the live deployed site. 
+    -  Favicon not working on the live deployed site (it works in my local site in development and has the icon hosted on AWS so I'm not sure why it doesn't work on Heroku). 
 
 
 [Return to Contents](#Contents)
@@ -488,6 +489,7 @@ This website was deployed using VS Code using the following steps:
 ---
 ## 7 Credits 
 
+### Code attribution: 
 Parts of the code were reused from the original Boutiqu Ado project from the "Full Stack Frameworks with Django" module. 
 I took influence from Sam Laubscher's website Flowstate Creative Solutions, MS4 project for the contact page app and some of the styling cues. 
 Some code was applied using the book "Django 3 By Example" from Antonio Mele. 
@@ -505,7 +507,7 @@ The ideas for the blogs were based on my own personal experience with both class
 I would like to give a huge and sincere thank you to: 
 
 - My lovely wife for her enduring patience with my coding and for kindly reviewing and being a tester for the website
-- Special thanks to Sam Laubscher for helping me with the website. 
+- Special thanks to Sam Laubscher for his guidance and assistance with this project. 
 - My mentor Spencer Barribaland for his guidance, encouragement and techincal support to keep me motivated to complete this final course project. 
 - A special mention to Jo and Igor from Tutor Assistance for helping me fix the last tricky bug and reinforcing the importance of indentation in Python code. 
 - My fellow students in CI plus the CI Tutor support for the technical guidance for their continued support and encouragement
