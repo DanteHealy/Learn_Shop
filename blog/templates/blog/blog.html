@@ -37,8 +37,11 @@
                             <a href="{% url 'blog_detail' bp.id %}">
                             <!-- Have blog title, author and created or last updated dates here. -->
                                 <h2 class="mb-0">
-                                "{{ bp.title }}"  by  {{ bp.user|title }}  on  {{ bp.created }}
-                                </h2>    
+                                    {{ bp.title }}  
+                                </h2>
+                                <h4>
+                                    by  {{ bp.user|title }}  on  {{ bp.created }}
+                                </h4>
                             </a>
                         </div>
                     </div>

@@ -2,7 +2,7 @@
 
 # Learning Shop
 
-[Learning Shop](https://dante-learn-shop.herokuapp.com/) is an eCommerce platform offering high quality affordable digital learning products to enhance a customer's professional skills.
+[Learn Shop](https://dante-learn-shop.herokuapp.com/) is an eCommerce platform offering high quality affordable digital learning products to enhance a customer's professional skills.
 
 The platform is intended to offer a range of job related and marketable skills across a broad range of categories from general business to technical IT courses. The aim is to make learning accessible whilst increasing our customer's income through improved capability. 
 
@@ -18,7 +18,26 @@ The platform is intended to offer a range of job related and marketable skills a
 
 - [2 Web Contents](#2-Web-Contents)
     - 2.1	Home Page
-    To be updated
+        - 2.1.1 Header 
+        - 2.1.2 Footer    
+    - 2.2   Products 
+    - 2.3 Product page (individual)
+        - 2.3.1 Product Management add a product
+        - 2.3.2 Product Management edit a product 
+
+    - 2.4 Shopping bag 
+    - 2.5 Secure Checkout 
+        - 2.5.1 Secure Checout - success
+
+    - 2.6 User registration
+    - 2.7 User Log In 
+    - 2.8 My profile 
+
+    - 2.9 Contact page
+    - 3.0 Blog page 
+        3.0.1 Blog Detail Page
+
+    - 3.1 Features not implemented
 
 - [3 Technologies Used](#3-Technologies-Used)
     - 3.1	Languages
@@ -82,8 +101,9 @@ The purpose of the site is to:
 -   As a site user I want a site to have a clear purpose when I first enter so that I know if it's relevant to my needs. 
 -   As a site user I want to be able to register for an account to make future purchases more easily. 
 -   As a site user I want to be able to receive an email to verify my email account and complete the registration.
--   As a site user I want to be able to send emails to the site admin in order to provide feedback which can be useful for the site owners.
--   As a site user I want to access my profile page in order to be able to be able to amend my personal details and view my order history.
+-   As a site user I want to be able to send messages to the site admin in order to provide feedback which can be useful for the site owners.
+-   As a site user I want to access my profile page in order to be able to be able to view my order history.
+-   As a site user I want to access a contacts page to provide feedback to the store owner admin. 
 -   As a shopper I want all functionality to work so I don't have bad customer experience. 
 -   As a shopper I want to be able to filter products that I'm interested in without having to search through all available products. 
 -   As a shopper I want to be able to select an individual product to see more detailed information and add the item to my shopping cart. 
@@ -95,6 +115,7 @@ The purpose of the site is to:
 -   As a store owner I want to be able to add new products to my store. 
 -   As a store owner I want to be able to edit and update the current product details and replace the product image files.
 -   As a store owner I want to be able to delete a product that is no longer for sale. 
+-   As a store owner I want to have a blog page with user comments to promote engagement within the community. 
 
 
 #### 1.2 Wireframes
@@ -102,16 +123,20 @@ The purpose of the site is to:
 The wireframes were created using Balsamiq to develope the basic layout structure of the site on both full screen desk top and mobile views. 
 
 - Home page
-- User registration
-- User Log In 
-- My profile 
+
 - Products 
 - Product page (individual)
 - Product Management add a product
 - Product Management edit a product 
+
 - Shopping bag 
 - Checkout 
-- Contact 
+
+- User registration
+- User Log In 
+- My profile 
+
+- Contact page
 - Blog page 
 
 
@@ -135,47 +160,74 @@ Colour scheme
 ## 2 Web Contents
 
 ### 2.1 Home page
+I used PowerPoint, including the stock images, to create the home page image with a student (original photograph was edited to remove the background and substitute with plan background color). 
+The call to action button invites visitors to browse the online courses on offer within the store. 
 
+
+#### 2.1.1 Header (applied to all pages)
+A Logo section at the top left of the page with a search bar and navigation links across the top including a 'My Account' and 'Checkout Basket' icon. There is also links to the relevants sectison of the website and a banner at the bottomo of the header for a discount promotion when a spending threshold is reached (£50 worth of courses earns a 10% discount to encourage further purchases).
+
+#### 2.1.2 Footer (applied to all pages)
+The footer is a simple transparent footer at the bottom of the page. 
 
 ### 2.2 Product List Page
+The product cards show an image, the course title, a price, tags and rating. The cards highlight with a grey shadow on hover so the user knows which card they will open on click. 
 
 
 ### 2.3 Individual Product Page
+The inividual product page provides the same summary information plus a detailed description of the course plus the buttons to return to shopping view or add the course to the shopping cart. 
+As these are online courses the site user will only be able to purchase one course per user account. 
 
 
-
-### 2.4 Edit Review Page
-
-
-
-### 2.5 Manage Genres Page
+#### 2.3.1 Individual Product Page - add a product
+List the product details where new products can be added by SuperUsers with admin access. 
 
 
-### 2.6 Add Genre Page
+#### 2.3.1 Individual Product Page - edit a product
+List the product details where existing products can be edited by SuperUsers with admin access. 
 
 
+### 2.4 Shopping Bag
+The shopping bag will list the items selected for purchase by the user. There is the option to remove items and also return the the main product listing to continue shopping. 
 
-### 2.7 Register new user page
 
-The 'Register' page contains a card where a new user can enter their user name and password credentials. 
+### 2.5 Secure Checkout
+The user is provided with the option to view their items and either return to the shopping basket to adjust the basket if necessary or to continue through to purchase by entering the payment details and completing the order. Only registered users can checkout courses, this is to enable customers to view their purchasing history. 
 
+
+### 2.5.1 Secure Checkout - Success
+Secure checkout provides a confimrmation with a summary of the users purchases.  The checkout will also trigger an email (from a dedicated Google email account set up for this project.)
+
+
+### 2.6 User Registration
+The 'Register' page contains a card where a new user can enter their user name, email and password credentials. 
+
+
+### 2.7 User Login
+User login enables user to sign-in to their account and thi
 
 
 ### 2.8 User's profile Page
-
 The profile page has the user's published reviews. 
 
 
 
-
-Where no reviews are submitted the user's profile will have a blank card showing that there are no reviews and a button taking the user to the add review page. 
-
-
+### 2.9 Contact Page
+The contact page has a contact form to provide feedback to the site admin and location details for the (fictional) offices with a Google maps iframe for where to find us. 
 
 
-### 2.9 Defensive programming
+### 3.0 Blog Page
+The Blog page has a list of links to blogs produced by Admins of the site.  This can been accessed by the users who are able to read the articles and comment if they are registered users. 
 
 
+#### 3.0.1 Blog Detail Page
+Users will be able to read the articles and registered users can comment on the blog posts. 
+
+
+### 3.1 Features not implemented 
+This is a site for selling courses, but not a platform for hosting course material. The ideal solution would be to have the content hosted here, but due to technical limitations it is not feasible to host video and other documents for the purposes of education. 
+
+Having a platform that hosts content for sale and also leave reviews on the course material for customers would make the vision associated with this project more complete. 
 
 
 [Return to Contents](#Contents)
@@ -234,7 +286,9 @@ To be updated
 
 ### 4.3 Project Management 
 
-GitHub Projects was used to track key features and tasks using the kanban board feature. 
+Working full time I conducted 2 day sprints over the weekend outside of working hours plus evenings where time and energy permitted. 
+
+The project was managed applying lists of User stories and a calendar in Excel to track major milestones, mentor check-ins keeping in mind the overall deadline. 
 
 
 [Return to Contents](#Contents)
@@ -242,6 +296,9 @@ GitHub Projects was used to track key features and tasks using the kanban board 
 ---
 ## 5 Testing 
 
+The general approach was to log all observed bugs as I was coding using a list and then return to fix them as required. The tool used was OneNote. 
+
+I had family, friends and work colleagues review the site and provide their feedback. 
 ### 5.1 System testing 
 
 [HTML Validator](https://validator.w3.org/)
@@ -278,7 +335,11 @@ GitHub Projects was used to track key features and tasks using the kanban board 
     - To be updated
 
  - Still remaining 
-    - To be updated 
+
+ The following bugs were still unresolved by the time I was due to submit the project: 
+    - Footer at the bottom of the page doesn't stick. I had various attempts and the option that worked (Bootstrap fixed-bottom) covered the submit and navigation button as well as the payment submit button when a number of courses were purchased. The footer body is transparent so it's not apparent to the user that the footer was covering the button. In order to avoid a bad user experience by the buttons at the bottom of the page seemingly not working with no feedback as to why. 
+    -  
+
 
 [Return to Contents](#Contents)
 
@@ -347,24 +408,26 @@ This website was deployed using VS Code using the following steps:
 ---
 ## 7 Credits 
 
-Parts of the code were reused from the original Boutiqu Ado project from the Django Full Stack Framework module. 
+Parts of the code were reused from the original Boutiqu Ado project from the "Full Stack Frameworks with Django" module. 
+I took influence from Sam Laubscher's website Flowstate Creative Solutions, MS4 project for the contact page and some of the styling cues. 
 Some code was applied using the book "Django 3 By Example" from Antonio Mele. 
-
-
+The online e-learning site "Udemy" was taken for the platform idea and course promotional content. 
 
 
 ### 7.1 Content
 
 To be updated
-
+ 
 
 ### 7.2 Acknowledgements
 
 I would like to give a huge and sincere thank you to: 
 
-- To be updated
+- My lovely wife for her enduring patience with my coding and for kindly reviewing and being a tester for the website
+- My mentor Spencer Barribal, Sam Laubscher and Simon Vardy for their guidance, emotional and techincal support to keep me motivated to complete this final course project
+- My fellow students in CI plus the CI Tutor support for the technical guidancefor their continued support and encouragement
 
 They have all been super supportive during this project and I appreciate their feedback and advice which helped 
-to get this site to this final state.
+to reach this final major milestone within the course.
 
 [Return to Contents](#Contents)
