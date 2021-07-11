@@ -197,6 +197,18 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.table {
+    color: #555;
+}
+
+.profile-courses {
+    margin: 0;
+}
+
+.sm-text {
+    font-size: 10px;
+}
+
 /* ------------------------------- footer styling */
 
 footer {
