@@ -3,11 +3,10 @@ from .models import Comment
 
 
 class CommentForm(forms.ModelForm):
-    """ Contact form """
+    """ Comment form """
 
     class Meta:
         model = Comment
         fields = [
-            'user',
             'comment',
         ]

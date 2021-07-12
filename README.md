@@ -137,7 +137,7 @@ The [wireframes](https://github.com/DanteHealy/Learn_Shop/tree/main/readme/wiref
 ![bag](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/shopping-cart.png)
 
 - Checkout 
-![checkout](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/checkout.png)
+![checkout](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/checkout-page.png)
 
 - User registration
 ![registration](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/wireframes/user-registration.png)
@@ -299,11 +299,11 @@ PostgreSQL and sqlite3 were used for the production of this website.
 
 ### 3.3 Libraries and Frameworks 
 
-Django 
-**PostgreSQL
-Bootstrap 
-Font Awesome 
-Google Fonts API
+- Django 
+- PostgreSQL 
+- Bootstrap 
+- Font Awesome 
+- Google Fonts API
 
 
 ### 3.4 Tools 
