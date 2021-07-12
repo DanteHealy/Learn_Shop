@@ -15,6 +15,8 @@ import os.path
 import environ
 import dj_database_url
 
+from pathlib import Path
+
 import mimetypes
 
 mimetypes.add_type("text/css", ".css", True)
