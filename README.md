@@ -420,6 +420,9 @@ Bugs were recorded on a tracking list (OneNote) and retained until fixed.
 
  The following bugs were still unresolved by the time I was due to submit the project:     
     -  Favicon not working on the live deployed site (it works in my local site in development and has the icon hosted on AWS so I'm not sure why it doesn't work on Heroku). 
+    -  Responsiveness was not so great on the Product Management with the buttons (edit / add new products) - this was not high priority as it only impacts Superusers. 
+
+    ![Responsive bug](https://github.com/DanteHealy/Learn_Shop/blob/main/readme/readme-tests/mobile-responsive-test.jpg)
 
 
 [Return to Contents](#Contents)
